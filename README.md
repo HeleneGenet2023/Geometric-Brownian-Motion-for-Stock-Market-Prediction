@@ -34,4 +34,5 @@ When comparing the simulated stock prices paths (using non-tuned parameters) wit
 ![image](https://github.com/user-attachments/assets/d0813f72-855a-4005-8ea4-a64132cff2b7)
 
 After tuning the parameters (both drift and volatility) based on historical AAPL data, the GBM simulations shows a closer alignmenent with AAPL historical stock prices. The estimated drift of -0.3398 indicates a sligh negative trends. The volatility of 0.3561 captures the level of fluctuation seen in the real market data. This demonstrates that parameter tuning can significantly better the predictive power of the model.
-![image](https://github.com/user-attachments/assets/2d0abb9e-0cff-42ab-b8f5-cb154a83ac46)
+![image](https://github.com/user-attachments/assets/3c60ff59-64ea-48be-81cd-3c1e2faf6377)
+
