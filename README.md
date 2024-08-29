@@ -21,6 +21,17 @@ To conclude, here as the key characteristics of GBM:
 - The model assumes that the logarithm of the asset price is normally distributed (the asset price follows a log-normal distribution).
 - Insures that the asset price remains non-negative by modeling the price as positive quantity that grows over time.
   
-# Results
+# Analysis and Results
+The simulation using GBM model generated paths for stock prices over a year. The paths show the randomness and variability in financial markets. The paths simulated show both upward and downwoard trends, showcasing the stochastic nature of stock prices. As the simulation progressed, the paths have shown higher volatility which is a characteristic of GBM where variance grows over time.
+![image](https://github.com/user-attachments/assets/7e095a9b-d621-4e54-85ac-7cd6806c34e8)
 
-# Analysis
+![image](https://github.com/user-attachments/assets/63c01d4c-222c-461c-9d60-535d302761de)
+
+The histogram of the final stock prices form the simulations shows largely a normal distrbution, centered around the initial stock price. However, there's a probability of higher and lower final prices.
+![image](https://github.com/user-attachments/assets/2bdc8f3f-b1d1-4093-b010-2744efdfdbe9)
+
+When comparing the simulated stock prices paths (using non-tuned parameters) with the historical AAPL stock prices, it becomes evident that the simulated paths have volatility but not enough precision with real-world trends. The historical prices (red line) lie within the range of the simulated paths but could be improved for accuracy.
+![image](https://github.com/user-attachments/assets/d0813f72-855a-4005-8ea4-a64132cff2b7)
+
+After tuning the parameters (both drift and volatility) based on historical AAPL data, the GBM simulations shows a closer alignmenent with AAPL historical stock prices. The estimated drift of -0.3398 indicates a sligh negative trends. The volatility of 0.3561 captures the level of fluctuation seen in the real market data. This demonstrates that parameter tuning can significantly better the predictive power of the model.
+![image](https://github.com/user-attachments/assets/2d0abb9e-0cff-42ab-b8f5-cb154a83ac46)
